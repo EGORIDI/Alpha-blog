@@ -1,0 +1,189 @@
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+   font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
+p.monospace {
+   font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+   font-family: Florence, cursive;
+}
+p.fantasy {
+   font-family: Blippo, fantasy;
+}
+
+p.xx-small{
+  font-size: xx-small;
+}
+p.x-small{
+  font-size: x-small;
+}
+p.small {
+   font-size: small;
+}
+p.medium {
+   font-size: medium;
+}
+p.large {
+   font-size: large;
+}
+p.larger{
+  font-size: larger;
+}
+p.xlarge {
+   font-size: x-large;
+}
+p.xx-large{
+  font-size: xx-large;
+}
+p.normal {
+   font-style: normal;
+}
+p.italic {
+   font-style: italic;
+}
+p.oblique {
+   font-style: oblique;
+}
+
+p.light {
+   font-weight: lighter;
+}
+p.bold {
+   font-weight: bold;
+}
+p.bolder {
+   font-weight: bolder;
+}
+
+p.light {
+   font-weight: lighter;
+}
+p.thick {
+   font-weight: bold;
+}
+p.thicker {
+   font-weight: 700;
+}
+
+p.normal{
+  font-variant:normal;
+}
+
+p.small{
+  font-variant: small-caps;
+}
+
+p.inherit{
+  font-variant: inherit;
+}
+
+p.example{
+  color: green;
+}
+
+h1{
+  color: #0000FF
+}
+
+p.color-example{
+  color: rgb(255, 0, 0);
+}
+
+p.left{
+  text-align: left;
+}
+
+p.right{
+  text-align: right;
+}
+
+p.center{
+  text-align: center;
+}
+
+p.justify{
+  text-align: justify;
+}
+
+td.top{
+  vertical-align: top;
+}
+
+td.middle{
+  vertical-align: middle;
+}
+
+td.bottom{
+  vertical-align: bottom;
+}
+
+span.baseline{
+  vertical-align: baseline;
+}
+
+span.sub{
+  vertical-align: sub;
+}
+
+span.super{
+  vertical-align: super;
+}
+
+span.pixel{
+  vertical-align: -10px
+}
+
+.main{
+  height: 150px; width: 400px;
+  background-color: LightSkyBlue;
+  display: inline-table;
+}
+
+.paragraph{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+p.none{
+  text-decoration: none;
+}
+
+p.dec-inherit{
+  text-decoration: inherit;
+}
+
+p.overline{
+  text-decoration: overline;
+}
+
+p.underline{
+  text-decoration: underline;
+}
+
+p.line-through{
+  text-decoration: line-through;
+}
+
+p.blink{
+  text-decoration: blink;
+}
+
+h2{
+  color: blue;
+  font-size: 30pt;
+  text-shadow: 5px 2px 4px grey;
+}
+
+p.capitalize{
+  text-transform: capitalize;
+}
+
+p.uppercase {
+   text-transform: uppercase;
+}
+p.lowercase {
+   text-transform: lowercase;
+}
