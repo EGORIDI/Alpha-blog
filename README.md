@@ -1,6 +1,6 @@
 # README
 
-This is the repository for the first Alpha-blog app of the Complete Ruby on Rials Developer Course.
+This is the repository for the first Alpha-blog app of the Complete Ruby on Rails Developer Course.
 
 
 (This README would normally document whatever steps are necessary to get the
