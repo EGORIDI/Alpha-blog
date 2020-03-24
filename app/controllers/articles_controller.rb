@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-
   end
 
   def edit
@@ -28,7 +27,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-
     if @article.update(article_params)
       flash[:success] = "Article was successfully updated"
       redirect_to article_path(@article)
