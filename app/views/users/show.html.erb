@@ -1,8 +1,22 @@
 <h1 align="center">Welcome to <%= @user.username %>'s page</h1>
+<br>
 <div class="row">
   <div class="col-md-4 offset-4 center">
     <%= gravatar_for @user, size: 150 %>
   </div>
 </div>
 <h4 align="center"><%= @user.username %>'s articles</h4>
-<%= render 'articles/article', obj: @user.articles %>
+<br>
+<div align="center">
+  <div class="col-md-4">
+    <%= will_paginate( @user_articles, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer ) %>
+  </div>
+</div>
+<br>
+<%= render 'articles/article', obj: @user_articles %>
+<br>
+<div align="center">
+  <div class="col-md-4">
+    <%= will_paginate( @user_articles, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer ) %>
+  </div>
+</div>

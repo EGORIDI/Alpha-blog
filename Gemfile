@@ -9,6 +9,9 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # use bcrypt to validate password
 gem 'bcrypt', '~> 3.1.7'
 
+# add pagination to my articles list view
+gem 'will_paginate', '3.3.0'
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
