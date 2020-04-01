@@ -36,9 +36,7 @@
     <ul class="navbar-nav" >
       <% if logged_in? %>
         <li class="nav-item my-2 mr-sm-2" >
-          <a class="nav-link" >
-            <%= link_to 'Log out', logout_path, class: "nav-link", method: :delete %>
-          </a>
+          <%= link_to 'Log out', logout_path, class: "nav-link", method: :delete %>
         </li>
         <li class="nav-item dropdown my-2 mr-sm-2">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,14 +51,10 @@
         </li>
       <% else %>
         <li class="nav-item my-2 mr-sm-2" >
-            <a class="nav-link" >
-              <%= link_to 'Log in', login_path %>
-            </a>
+          <%= link_to 'Log in', login_path, class: "nav-link" %>
         </li>
         <li class="nav-item my-2 mr-sm-2">
-          <a class="nav-link" >
-            <%= link_to 'Sign up', signup_path %>
-          </a>
+          <%= link_to 'Sign up', signup_path, class: "nav-link" %>
         </li>
       <% end %>
     </ul>
