@@ -19,6 +19,7 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+  timeout: 5000 # this is to fix a testing error giving SQLite3::BusyException: database is locked
 
 production:
   <<: *default

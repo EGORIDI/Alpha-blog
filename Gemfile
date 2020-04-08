@@ -9,6 +9,8 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # use bcrypt to validate password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'rails-controller-testing'
+
 # add pagination to my articles list view
 gem 'will_paginate', '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'

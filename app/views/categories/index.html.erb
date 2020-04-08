@@ -1,0 +1,21 @@
+<h1 align="center">Listing all Categories</h1>
+<br>
+<div align="center">
+  <div class="col-md-4">
+    <%= will_paginate( @categories, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer ) %>
+  </div>
+  <% @categories.each do |category| %>
+    <ul class="listing">
+      <div class="row">
+        <div class="card col-md-4 offset-4">
+          <li class="article-title">
+            <%= link_to "#{category.name}", category_path(category) %>
+          </li>
+        </div>
+      </div>
+    </ul>
+  <% end %>
+  <div class="col-md-4">
+    <%= will_paginate( @categories, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer ) %>
+  </div>
+</div>
