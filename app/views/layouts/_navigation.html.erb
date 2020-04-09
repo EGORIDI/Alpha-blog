@@ -25,6 +25,21 @@
           </div>
         </li>
       <% end %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" ><%= link_to "All Categories", categories_path, class: "dropdown-item" %></a>
+          <% Category.all.each do |category| %>
+            <a class="dropdown-item"><%= link_to "#{category.name}", category_path(category) %></a>
+          <% end %>
+          <% if logged_in? and current_user.admin? %>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" ><%= link_to "Create new Category", new_category_path %></a>
+          <% end %>
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
