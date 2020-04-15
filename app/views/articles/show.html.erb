@@ -23,6 +23,11 @@
   </div>
   <div class="card-body">
     <%= simple_format(@article.description) %>
+    <% if @article.categories.any? %>
+      <form class="form-inline">
+        <p>Categories: <%= render @article.categories %></p>
+      </form>
+    <% end %>
     <div class="article-actions">
       <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
         <%= link_to "Edit this article",

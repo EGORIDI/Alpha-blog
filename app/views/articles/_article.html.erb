@@ -14,6 +14,11 @@
             </small>
           </div>
         </div>
+        <form class="form-inline" action="index.html" method="post">
+          <% if article.categories.any? %>
+            <p>Categories: <%= render article.categories %></p>
+          <% end %>
+        </form>
         <% if logged_in? && (current_user == article.user || current_user.admin?) %>
           <div class="article-actions">
             <%= link_to "Edit this article",
